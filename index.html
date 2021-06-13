@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="it is my mini lab" />
+    <meta name="keywords" content="bite and learn" />
+    <meta name="author" content="khan" />
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>lab</title>
+</head>
+
+<body>
+    <canvas id="preloader"></canvas>
+    <canvas id="bg"></canvas>
+    <div class="container">
+        <header>
+            <div class="button_wrapper">
+                <div class="button_label">lab</div>
+            </div>
+            <svg>
+                <defs>
+                    <filter id='shake0'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="0" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="7" />
+                    </filter>
+                    <filter id='shake1'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="1" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="5" />
+                    </filter>
+                    <filter id='shake2'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="2" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8" />
+                    </filter>
+                    <filter id='shake3'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="3" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+                    </filter>
+                    <filter id='shake4'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="4" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="4" />
+                    </filter>
+                </defs>
+            </svg>
+        </header>
+        <section class="about">
+            <div class="footer_wrap">
+                <div id="wrapper"></div>
+                <div id="text">Привет, меня зовут Хан. Это моя лаба. Здесь мои демки, темплейты и какие то странные
+                    штуки. Привет, меня зовут Хан. Это моя лаба. Здесь мои демки, темплейты и какие то странные штуки.
+                    Привет, меня зовут Хан. Это моя лаба. Привет, меня зовут Хан. Это моя лаба. </div>
+                <div id="image"></div>
+            </div>
+        </section>
+        <section class="projects">
+            <a href="https://github.com/khantorot/strapi_demo">strapi_demo</a>
+            <a href="https://github.com/khantorot/ecommerce_demo">ecommerce_demo</a>
+        </section>
+    </div>
+
+    <script src="./assets/js/vector.js"></script>
+    <script src="./assets/js/particle.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

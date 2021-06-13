@@ -1,0 +1,188 @@
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+header svg{
+    width: 0;
+}
+
+.button_wrapper {
+    border: 2px solid #fff;
+    filter: url("#shake0");
+    pointer-events: none;
+    animation: distort 0.4s linear infinite;
+}
+
+.button_label {
+    font-size: 30vw;
+    color: #fff
+}
+
+@keyframes distort {
+    0% {
+        filter: url("#shake0");
+    }
+
+    25% {
+        filter: url("#shake1");
+    }
+
+    50% {
+        filter: url("#shake2");
+    }
+
+    75% {
+        filter: url("#shake3");
+    }
+
+    100% {
+        filter: url("#shake4");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
+    height: 4000px;
+    z-index: -1;
+    position: relative;
+}
+
+#wrapper {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+.container_circle {
+    position: absolute;
+}
+
+.inner {
+    position: absolute;
+    left: -10px;
+    background: #000;
+    color: #fff;
+    width: 20px;
+    height: 22px;
+    min-width: 20px;
+    min-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    width: 330px;
+    height: 330px;
+    background: url('../../content/images/ava.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: calc(50% - 165px);
+    left: calc(50% - 165px);
+    z-index: -1;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cursor{
+    position: absolute;
+    background: url(https://pngimage.net/wp-content/uploads/2018/05/dick-png-16.png);
+    background-size: cover;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: animate 0.3s linear infinite;
+    z-index: 10;
+    filter: invert(1);
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%);
+    }
+    30%{
+        transform: translate(-50%, -100%);
+    }
+    70%{
+        transform: translate(-50%, 0%);
+    }
+    100%{
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+
+
+#preloader {
+    background: #000;
+    position: fixed;
+    z-index: 11;
+    display: none;
+}
+
+.hide_preloader{
+    transition: ease 2s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#bg{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+.projects{
+    position: relative;
+    margin-top: 2000px;
+    min-height: 100vh;
+    z-index: 2;
+    background: #000;
+    padding: 10vw 5vw;
+}
+
+.projects a{
+    display: block;
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+.projects a:hover{
+    text-decoration: underline;
+}
