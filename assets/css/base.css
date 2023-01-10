@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+:root{
+    --text: #fff;
+    --bg: #000;
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.fade_out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+.fade_out.fade_out_active {
+    opacity: 1;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+img{
+    pointer-events: none;
+}
+
+textarea, button, input{
+    border: 0;
+    outline: 0;
+    color: var(--text);
+    background: none;
+}
+
+
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 0;
+    height: 0;
+}

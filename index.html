@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./content/images/atom.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>169</title>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="bg"></canvas>
+        <header>
+            <div class="header_text">
+                <div class="text">
+                    <div class="text_elem">l</div>
+                    <div class="text_elem">a</div>
+                    <div class="text_elem">b</div>
+                </div>
+            </div>
+            <svg>
+                <defs>
+                    <filter id='shake0'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="0" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="7" />
+                    </filter>
+                    <filter id='shake1'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="1" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="5" />
+                    </filter>
+                    <filter id='shake2'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="2" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8" />
+                    </filter>
+                    <filter id='shake3'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="3" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+                    </filter>
+                    <filter id='shake4'>
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" seed="4" />
+                        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="4" />
+                    </filter>
+                </defs>
+            </svg>
+        </header>
+        <section class="about">
+            <div class="footer_wrap">
+                <div id="wrapper"></div>
+                <div id="text">Lab! Lab? Lab! What is Lab? Lab! Lab? Lab. Sup! I’m Khan. Hither I piled up old old old old old old old old old old old old old and old projects. Bear out it and pop me an khantorot@gmail.com</div>
+                <div id="image"></div>
+            </div>
+        </section>
+        <section class="project">
+            <div class="bottom"></div>
+        </section>
+    </div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
